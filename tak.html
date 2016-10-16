@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="ISO-8859-1">
+    <title>Tak for din email - Berg&Hviid</title>
+    <meta name="description" content="Vi takker for din henvendelse og vil vende retur.">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/scripts.js" ></script>
+     
+</head>
+<body>
+<div class="wrapper">
+    <header>
+    	<section>
+        	<div class="social">
+            	<a target="_blank" class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/BergHviid-%C3%98kologisk-salon-470759803133846/">&nbsp;</a>
+                <a target="_blank" class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/bergoghviid/">&nbsp;</a>
+            </div>
+        	<a href=""><img id="logo" src="/images/logo-bergoghviid.png" /></a>
+            <address>
+            	<dl class="terms-list">
+                	<dt>Kontakt os</dt>
+                    <dd><a href="tel:24247752">2424 7752</a></dd>
+                </dl>
+            </address>
+        </section>
+    </header>
+    <section class="main">
+    	<div><h1>Tak for din henvendelse</h1>Du vil høre fra os snarest</div>
+    </section>
+    <section class="map">
+    	<div>
+        	<img src="/images/map-bg.jpg" />
+            <div class="contact">
+                <form method="post" action="http://www.bergoghviid.dk/cgi-bin/FormMail.pl" 
+                    accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
+                    document.charset = 'ISO-8859-1'; 
+                    window.onbeforeunload = function () {document.charset=originalCharset;};">
+                    <input name="realname" placeholder="Navn..." />
+                    <input name="telephone" placeholder="Telefon nr..." />
+                    <input name="email" placeholder="E-mail..." />
+                    <textarea name="Message" placeholder="Meddelelse..."></textarea>
+                    <input type="submit" value="Send" />
+                    <input type="hidden" name="recipient" value="salon@bergoghviid.dk" />
+                    <input type="hidden" name="subject" value="Subject" />
+                    <input type="hidden" name="redirect" 
+                    value="http://www.bergoghviid.dk/tak.html" />
+                    <input type="hidden" name="missing_fields_redirect" 
+                    value="http://www.bergoghviid.dk/fejl.html" />
+                    <input type="hidden" name="required" value="realname,telephone,email,Message" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+    	<section>
+        	<ul>
+            	<li>
+                	<div>
+                        Berg&Hviid - Kontakt os på 2424 7752<br />Danmarksgade 14 A, 9900 Frederikshavn
+                    </div>
+                </li>
+                <li>
+                	<img src="/images/logo-bergoghviid.png" />
+                </li>
+                <li>
+                	<div>
+                        <a target="_blank" class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/BergHviid-%C3%98kologisk-salon-470759803133846/">&nbsp;</a>
+                        <a target="_blank" class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/bergoghviid/">&nbsp;</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

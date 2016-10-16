@@ -1,0 +1,255 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,400,700,300);
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	background-color:#FFFFFF;
+	margin:0;
+	padding:0;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+	border:0;
+	max-width:100%;
+	max-height:auto;
+	display:block;
+}
+body, td, input, select, textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	color:#000;
+	font-weight:normal !important;
+}
+.clearfix {
+	display:block;
+	overflow:hidden; content:""; clear:both; height:0;}
+
+ul, form, p {
+	margin:0;
+	padding:0;
+}
+h1 {
+	font-size:35px;
+	font-weight:300;
+	margin:0 0 10px 0;
+}
+h2 {
+	font-size: 70px;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+    line-height: 1.1em;
+
+}
+li {
+	list-style-type:none;
+}
+a {
+	color:#000;
+	outline:none;
+	text-decoration:none;
+}
+a:hover {
+	color:#5eb130;
+}
+a.btn {
+	padding:4px 8px;
+	display:inline-block;
+	text-align:center;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+header {
+	height:250px;
+	position:relative;
+}
+.wrapper {
+	width:1100px;
+	margin:0 auto;
+	max-width:98%;
+}
+.logo {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	-moz-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
+	display:block;
+	max-height:50%;
+}
+
+/* GENEREL */
+div.text {
+	padding:40px;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+div.text:hover {
+	background-color:rgba(0,0,0,1.00) !important;
+	color:#FFF;
+}
+div.text > p {
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+div.text:hover p {
+	display:block;
+	opacity: 1;
+}
+div.text > span {
+	font-size:30px;
+	line-height:30px;
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	display:block;
+	color:#FFF;
+	text-align:center;
+}
+
+/* ABOUT */
+.about {
+	height:550px;
+}
+.about > div {
+	width:50%;
+	float:left;
+	height:100%;
+	position:relative;
+}
+.about > div.expect {
+	background-color:#A3DBBE;
+}
+
+
+/* CERTIFICATE */
+.image {
+	background-color:#ece9e1;
+}
+.certificate {
+	height:550px;
+}
+.certificate > div {
+	width:50%;
+	float:left;
+	height:100%;
+	position:relative;
+}
+.certificate > div.organic {
+	background-color:#634e3a;
+}
+.certificate > div.organic h1 {
+	color:#FFF;
+}
+
+/* PRODUCTS */
+.image {
+}
+.products {
+	height:550px;
+}
+.products > div {
+	width:50%;
+	float:left;
+	height:100%;
+	position:relative;
+}
+.products > div.johnmasters {
+	background-color:#000;
+}
+.products > div.johnmasters  > h1 {
+	color:#FFF;
+}
+
+/* PRICES */
+.prices {
+	background-color:#f6f6f6;
+	position:relative;
+	height:auto;
+}
+.priseHeader {
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	-moz-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	opacity:1;
+}
+.prices > div.priceBoxes {
+	width:50%;
+	float:left;
+	opacity:0;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+.prices:hover > div.priceBoxes {
+	opacity: 1;
+}
+.prices:hover .priseHeader {
+	opacity:0;
+}
+.prices > div.priceBoxes > ul {
+	padding:40px;
+}
+.prices li {
+	font-size:15px;
+	padding:2px 0;
+}
+.prices li span {
+	float:right;
+}
+.view {
+	font-size:30px;
+	color:#5C5C5C;
+	display:block;
+	text-align:center;
+}
+
+footer {
+	padding:40px 0;
+}
+footer > ul {
+	margin:0;
+	padding:0;
+	font-size:0;
+}
+footer > ul > li {
+	vertical-align:top;
+	display:inline-block;
+	width:10%;
+	font-size:15px;
+}
+footer > ul > li:nth-child(2) {
+	text-align:center;
+	width:80%;
+	padding-top:12px;
+}
+footer > ul > li:first-child > img {
+	height:50px;
+}
+footer > ul > li:last-child > a > i {
+	color:#3c79bd;
+	font-size:30px;
+	float:right;
+}
